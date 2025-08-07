@@ -6,10 +6,11 @@
 
 int main() {
 
-    int Torre = 5, Bispo = 5, Rainha = 8;
+    int Torre = 5, Bispo = 5, Rainha = 8, Cavalo = 1;
     int i = 0;
     int a = 1;
     int b = 1;
+    int j = 0;
     
     //Movimento da Torre em 5 casas Horizontal ou Vertical a direita
     printf("Torre:\n");
@@ -18,6 +19,7 @@ int main() {
         printf("Direita\n");
         i++;
     }
+    printf("\n");
     
     //Movimento do Bispo em 5 casa Diagonal para cima direita
     printf("Bispo: \n");
@@ -25,7 +27,8 @@ int main() {
     {
         printf("Cima direita\n");
     }
-    
+    printf("\n");
+
     //Movimento da Rainha em 8 casas para esquerda
     printf("Rainha: \n");
     do
@@ -34,6 +37,21 @@ int main() {
         b++;
 
     } while (b <= Rainha);
+    printf("\n");
+
+    //Movimento em L do Cavalo em 3 casas
+    printf("Cavalo:\n");
+    for (int i = 1; i <= 1; i++)
+    {
+        printf("Baixo\n");
+        while (j <= Cavalo)
+        {
+            printf("Esquerda\t");
+            j++;
+        }
+        
+    }
+    printf("\n");
     
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
